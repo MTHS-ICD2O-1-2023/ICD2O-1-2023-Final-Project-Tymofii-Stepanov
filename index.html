@@ -3,22 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rock Paper Scissors Game</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Guess the Number Game">
+  <meta name="keywords" content="game, guess the number, javascript">
+  <meta name="author" content="Tymofii">
+  <title>Guess the Number Game</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
 </head>
 <body>
-  <h1>Rock, Paper, Scissors</h1>
-  <div class="game-container">
-    <div class="choice" id="rock"><img src="assets/rock.png" alt="Rock"></div>
-    <div class="choice" id="paper"><img src="assets/paper.png" alt="Paper"></div>
-    <div class="choice" id="scissors"><img src="assets/scissors.png" alt="Scissors"></div>
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script src="./js/script.js"></script>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">Guess the Number Game</span>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        <h2>Guess the Number</h2>
+        <div>
+          <p>Guess a number between 1 and 10:</p>
+          <div id="number-images"></div>
+          <br>
+          <button id="reset-game" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+            Reset Game
+          </button>
+        </div>
+        <div id="result"></div>
+      </div>
+    </main>
   </div>
-  <div class="result">
-    <p id="result-text">Make your choice!</p>
-  </div>
-  <div class="scoreboard">
-    <p id="score">Player: 0 Computer: 0</p>
-  </div>
-  <script src="game.js"></script>
 </body>
 </html>
